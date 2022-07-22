@@ -3,8 +3,8 @@ markList = []
 
 while True:
     newValue = True
-    name = input("Enter the name: ")    # arivunila
-    if name == "exit":  # arivunila == exit
+    name = input("Enter the name: ")
+    if name == "exit":
         break
     markDict['name'] = name
     markDict['mark'] = 10

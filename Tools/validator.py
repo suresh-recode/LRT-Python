@@ -47,8 +47,7 @@ for index, py_file in enumerate(list_of_py_files):
                        "Correct": correct, 'Incorrect': incorrect}
         individual_result_df = individual_result_df.append(current_row, ignore_index=True)
 overall_result_df = individual_result_df.groupby('Employee_Full_Name')['Correct', 'Incorrect'].sum()
-# print(overall_result_df)
-# print(individual_result_df)
+
 
 writer = pandas.ExcelWriter('Result.xlsx', engine='xlsxwriter')
 overall_result_df.to_excel(writer, sheet_name='overall_result')
