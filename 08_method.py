@@ -3,5 +3,6 @@ def method_name(val, data):
     val = val + 20
     return val
 
+
 a = method_name(10, 'suresh')
 print(a)
