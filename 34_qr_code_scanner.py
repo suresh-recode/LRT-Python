@@ -1,3 +1,4 @@
+import datetime
 import cv2
 import webbrowser
 # initalize the cam
@@ -11,13 +12,15 @@ while True:
     data, bbox, _ = detector.detectAndDecode(img)
     # check if there is a QRCode in the image
     if data:
-        a=data
+        a = data
         break
     # display the result
     cv2.imshow("QRCODEscanner", img)
+    # print(datetime.datetime.now())
     if cv2.waitKey(1) == ord("q"):
         break
 print(a)
-# b=webbrowser.open(str(a))
+# a = "www.google.com"
+b=webbrowser.open(str(a))
 cap.release()
 cv2.destroyAllWindows()
