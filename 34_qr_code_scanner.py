@@ -1,11 +1,10 @@
-import datetime
-import cv2
+import cv2  # opencv-python
 import webbrowser
 # initalize the cam
 cap = cv2.VideoCapture(0)
 # initialize the cv2 QRCode detector
 detector = cv2.QRCodeDetector()
-a= ''
+a = ''
 while True:
     _, img = cap.read()
     # detect and decode
@@ -20,7 +19,7 @@ while True:
     if cv2.waitKey(1) == ord("q"):
         break
 print(a)
-# a = "www.google.com"
-b=webbrowser.open(str(a))
+a = "www.google.com"
+b = webbrowser.open(str(a))
 cap.release()
 cv2.destroyAllWindows()
