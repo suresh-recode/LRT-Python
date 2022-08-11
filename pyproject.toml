@@ -15,6 +15,7 @@ qrcode = "^7.3.1"
 mediapipe = "^0.8.10"
 scipy = "^1.9.0"
 pywhatkit = "^5.4"
+aiohttp = "^3.8.1"
 
 [tool.poetry.dev-dependencies]
 
