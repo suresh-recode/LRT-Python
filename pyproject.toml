@@ -20,6 +20,7 @@ pyttsx3 = "^2.90"
 SpeechRecognition = "^3.8.1"
 PyAudio = "^0.2.12"
 googletrans = "4.0.0-rc1"
+openpyxl = "^3.0.10"
 
 [tool.poetry.dev-dependencies]
 
